@@ -1,0 +1,22 @@
+/* vendors */
+@use 'vendors/normalize';
+
+/* base */
+@use 'base/functions';
+@use 'base/variables';
+@use 'mixins/font-face';
+@use 'base/fonts';
+@use 'base/base';
+
+/* components */
+// @use 'components/headings';
+// @use 'components/button';
+// @use 'components/nav';
+// @use 'components/burger';
+
+// @use 'components/nav';
+
+// sections
+@use 'sections/header';
+@use 'sections/main-section';
+@use 'sections/footer';

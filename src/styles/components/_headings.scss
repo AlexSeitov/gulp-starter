@@ -1,0 +1,59 @@
+@use '../base/functions' as *;
+@use '../base/variables' as *;
+
+.h1,
+.h2,
+.h3 {
+  margin-top: 0;
+  color: var(--black);
+}
+
+.h1 {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 1.1;
+  text-align: center;
+
+  @media (min-width: $sm) {
+    text-align: start;
+  }
+
+  @media (min-width: $md) {
+    font-size: 70px;
+  }
+
+  @media (min-width: $xxl) {
+    font-size: 124px;
+  }
+}
+
+.h2 {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: lh(70, 64);
+
+  @media (min-width: $md) {
+    font-size: 50px;
+  }
+
+  @media (min-width: $xxl) {
+    font-size: 64px;
+  }
+}
+
+.h3 {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+
+  @media (min-width: $md) {
+    // font-size: 50px;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 36px;
+  }
+}

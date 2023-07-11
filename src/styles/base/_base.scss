@@ -1,0 +1,78 @@
+@use 'functions' as *;
+@use 'variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  color: $text-color;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  font-family: $font-family;
+  line-height: $line-height;
+  background-color: $page-background;
+  text-rendering: optimizespeed;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  max-width: $container-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+// .disable-scroll {
+//   position: fixed;
+//   overflow: hidden;
+
+//   @media (max-width: 1023.98px) {
+//     &::before {
+//       position: absolute;
+//       top: 0;
+//       right: 0;
+//       bottom: 0;
+//       left: 0;
+//       overflow: hidden;
+//       content: '';
+//     }
+//   }
+// }
+
+// .social-icon {
+//   display: inline-block;
+//   width: 38px;
+//   height: 38px;
+//   transition: transform $transition;
+
+//   @media (hover: hover) {
+//     &:hover {
+//       transform: scale(1.2;
+//     }
+//   }
+// }

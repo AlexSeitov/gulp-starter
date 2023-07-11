@@ -1,0 +1,65 @@
+@use '../base/functions' as *;
+@use '../base/variables' as *;
+
+.nav {
+  // .nav__list
+
+  &__list {
+    @media (min-width: $lg) {
+      display: flex;
+    }
+  }
+
+  // .nav__item
+
+  // &__item {
+  // }
+
+  // .nav__link
+
+  &__link {
+    display: inline-block;
+    padding: 0 20px;
+    color: var(--black);
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+
+.header {
+  &__nav {
+    visibility: visible;
+
+    @media (max-width: 1023.98px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      visibility: hidden;
+
+      .nav__list {
+        height: 100%;
+        padding: 10px;
+        background-color: var(--white);
+
+        @supports (height: 100dvh) {
+          height: 100dvh;
+        }
+      }
+
+      .nav__link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 24px;
+        cursor: default;
+        opacity: 0;
+
+        @media (hover: hover) {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

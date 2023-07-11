@@ -1,0 +1,42 @@
+@use 'functions' as *;
+@use 'sass:color';
+
+// Fonts
+$font-family: helvetica, sans-serif;
+$font-size: 16px;
+$font-weight: 400;
+$line-height: 1.4;
+
+// Colors
+$primary-color: #646464;
+$secondary-color: #646464;
+$white: #fff;
+$black: #1b1b1d;
+$gray: #66727f;
+$page-background: #fafafb;
+$background: #eeeff1;
+$text-color: #64646a;
+$btn-color-hover: color.adjust($primary-color, $blackness: 5%);
+$border-color: #e0e0e0;
+$placeholder-color: #999;
+
+// Others
+$radius: 8px;
+$shadow: 0 0 12px 0 rgba(230, 235, 245, 50%);
+$transition: 0.3s;
+
+// Sizes
+$max-width-container: 1240; // container size
+$container-padding: 30;
+
+// Container width
+$container-width: $max-width-container + $container-padding;
+
+// Breakpoints
+$xs: 360px;
+$sm: 568px;
+$md: 768px;
+$lg: 1024px;
+$xl: $container-width + px;
+$xxl: 1530px;
+$fhd: 1920px;
